@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <div class="bg-img-2">
+    <div class="row">
+        <div class="col-4 w-25">
+            <div class="container-fluid w3-sidebar  w3-bar-block" style="width:25%;background-color: rgb(255, 9, 255);">
+                <div class=" row flex-column gap-3 my-5">
+                    <div class="col-12 col-lg-6 ">
+                        <a href="/task.html" style="text-decoration: none;">
+                        <p class="text-center m-auto p-3 h5 "><span class='mx-2'><i class="fa-solid fa-clipboard-list"></i></span>Task</p>
+                    </a>
+                    </div>
+                    <div class="col-12 col-lg-6   bg-white  rounded-end-pill  rounded-end-pill">
+                     
+                        <p class="text-center m-auto p-3 h5 "><span class='mx-2'><i class="fa-solid fa-location-crosshairs"></i></span>Location</p>
+                     
+                    </div>
+                    <div class="col-12 col-lg-6" style="position: absolute;bottom: 40px;">
+                      <a href="/login.html" style="text-decoration: none;">
+                        <p class="text-center m-auto p-3 h5 "><span class='mx-2'><i class="fa-solid fa-arrow-right-from-bracket"></i></span>Log Out</p>
+                        </a>
+                    </div>
+                </div>
+                </div>
+        </div>
+        <div class="col">
+            <section class="container-fluid text-white my-2" >
+                <button class="btn btn-primary" onclick="findLocation()">Add Location</button>
+                <div>
+                
+                    <p class="h4">
+                        Current Location
+                    </p>
+                    <ul class="navbar-nav" id="currentLocationList">
+                        
+                    </ul>
+                </div>
+                <div>
+                    <p class="h4">
+                        Previous Location
+                    </p>
+                    <ul class="navbar-nav " id="previousLocationList">
+
+                    </ul>
+                
+                </div>
+            </section>   
+            
+        </div>
+        </div>
+        </div>
+        <script src="/js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+</body>
+</html>

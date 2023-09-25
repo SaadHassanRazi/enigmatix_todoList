@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <link rel="stylesheet" href="/css/index.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Modal -->
+    <!-- Button trigger modal -->
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Add Task</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="row flex-column gap-4">
+            <div class="col-md">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="floatingInputGrid-task" placeholder="AddTask
+                  " >
+                  <label for="floatingInputGrid">Add Task</label>
+                </div>
+              </div>
+              <div class="col-md">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="floatingInputGrid" placeholder="name@example.com" >
+                  <label for="floatingInputGrid">Description</label>
+                </div>
+              </div>
+              <div class="col-md">
+                <div class="form-floating">
+                  <input type="datetime-local" class="form-control" id="floatingInputGrid-date" placeholder="name@example.com" >
+                  <label for="floatingInputGrid">Select Date</label>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" onclick="addTask()" id="addTaskBtn">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="row">
+        <div class="col-4 w-25">
+            <div class="container-fluid w3-sidebar  w3-bar-block" style="width:25%;background-color: rgb(255, 9, 255);">
+                <div class=" row flex-column gap-3 my-5">
+                    <div class="col-12 col-lg-6 bg-white  rounded-end-pill">
+                        <p class="text-center m-auto p-3 h5 "><span class='mx-2'><i class="fa-solid fa-clipboard-list"></i></span>Task</p>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                      <a href="/location.html" style="text-decoration: none;">
+                        <p class="text-center m-auto p-3 h5 "><span class='mx-2'><i class="fa-solid fa-location-crosshairs"></i></span>Location</p>
+                      </a>
+                    </div>
+                    <div class="col-12 col-lg-6" style="position: absolute;bottom: 40px;">
+                      <a href="/login.html" style="text-decoration: none;">
+                        <p class="text-center m-auto p-3 h5 "><span class='mx-2'><i class="fa-solid fa-arrow-right-from-bracket"></i></span>Log Out</p>
+                        </a>
+                    </div>
+                </div>
+                </div>
+        </div>
+        <div class="col">
+            <section class="container-fluid  my-2">
+                <p class="btn btn-primary btn-lg rounded-pill" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#exampleModal" >+ Add a New Task</p>
+                <div>
+                    <p class="h4">
+                        InComplete
+                    </p>
+                    <ul class="navbar-nav" id="inCompleteList">
+                      
+                    </ul>
+                </div>
+                <div>
+                    <p class="h4">
+                        Complete
+                    </p>
+                    <ul class="navbar-nav " id="completeList">
+
+                    </ul>
+                </div>
+            </section>
+        </div>
+        
+
+    </div>
+    
+   
+
+    <script src="/js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
